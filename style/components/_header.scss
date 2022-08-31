@@ -1,0 +1,92 @@
+.light-mode{
+    background-color: #fff;
+    .header{
+        &__part-one__logo{
+            img{
+                content: url(../img/more/video-light.png);
+            }
+        }
+        &__part-two{
+            color: #000;
+        }
+    }    
+}
+
+.header{
+    .container{
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 520px){
+            flex-direction: column;
+        }
+    }
+    &__part-one{
+        width: 100%;
+        position: relative;
+        left: -27%;
+        @media screen and (max-width: 818px){
+            left: -10%;
+        }
+        @media screen and (max-width: 665px){
+            left: 0;
+        }
+        @media screen and (max-width: 520px){
+            width: 600px;
+        }
+        video{
+            object-fit: cover;
+            width: 100%;
+        }
+        &__logo{
+            position: absolute;
+            top: -1px;
+            img{
+                width: 101%;
+            }
+        }
+    }
+    &__part-two{
+        color: #fff;
+        z-index: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        left: 45%;
+        @media screen and (max-width: 818px){
+            left: 55%;
+            p{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 665px){
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 70%;
+            h1{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        h1{
+            font-size: 100px;
+            @media screen and (max-width: 818px){
+                font-size: 50px;
+            }
+            @media screen and (max-width: 665px){
+                font-size: 30px;
+            }
+        }
+        p{
+            font-size: 30px;
+            color: rgb(183, 0, 255);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}

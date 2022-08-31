@@ -1,0 +1,121 @@
+.light-mode{
+    .blog{
+        color: #000;
+        &__posts__item__text{
+            background-color: #eee;
+
+            h3{
+                background-color: #eee;
+            }
+            p{
+                background-color: #eee;
+            }
+            a{
+                background-color: #eee;
+            }
+        }
+    }
+}
+
+.dark-mode{
+    .blog{
+        &__posts__item__text{
+            background-color: #101010;
+            h3{
+                background-color: #101010;
+                color: #fff;
+            }
+            p{
+                background-color: #101010;
+                color: #fff;
+            }
+            a{
+                background-color: #101010;
+            }
+        }
+    }
+}
+
+.blog{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0;
+    .line{
+        transform: rotate(180deg);
+    }
+    h2{
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin: 20px 0;
+        &::first-letter{
+            color: var(--main-purple);
+        }
+        @media screen and (max-width: 520px){
+            font-size: 40px;
+            margin-left: 10px;
+        }
+    }
+    &__posts{
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 20px;
+        margin-top: 50px;
+        &::-webkit-scrollbar{
+            height: 5px;
+        }
+        &::-webkit-scrollbar-thumb{
+            cursor: pointer;
+        }
+        img{
+            width: 100%;
+            border-top-left-radius: 20px;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 300px;
+            height: 315px;
+            border-bottom-right-radius: 20px;
+            overflow: hidden;
+            &__text{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #fff;
+            }
+            h3{
+                background-color: #fff;
+                color: var(--main-black);
+                padding: 15px 10px;
+            }
+            p{
+                background-color: #fff;
+                color: var(--main-black);
+                padding: 5px 10px;
+            }
+            a{
+                background-color: #fff;
+                text-align: center;
+                display: block;
+                padding: 15px 10px;
+                text-decoration: none;
+                color: var(--main-purple);
+                font-weight: 600;
+                
+            }
+            @media screen and (max-width: 520px){
+                &:first-child{
+                    margin-left: 10px;
+                }
+                &:last-child{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

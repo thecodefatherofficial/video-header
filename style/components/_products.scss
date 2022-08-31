@@ -1,0 +1,91 @@
+.light-mode{
+    .products{
+        h2{
+            color: #000;
+        }
+    }
+}
+
+.products{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 110px 0 30px;
+    h2{
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin: 20px 0;
+        &::first-letter{
+            color: var(--main-purple);
+        }
+        @media screen and (max-width: 520px){
+            font-size: 40px;
+            margin-left: 10px;
+        }
+    }
+    .line{
+        margin: auto 0 auto auto;
+    }
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 50px;
+        @media screen and (max-width: 520px){
+            flex-direction: column;
+            margin: 50px 20px 0;
+        }
+        img{
+            width: 130px;
+        }
+        .products--item{
+            display: flex;
+            align-items: center;
+            width: 45%;
+            padding: 15px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            gap: 15px;
+            @media screen and (max-width: 520px){
+                width: 100%;
+            }
+
+            @media screen and (max-width: 450px){
+                flex-direction: column;
+                box-sizing: border-box;
+                align-items: center;
+                text-align: center;
+            }
+            h3{
+                margin-bottom: 10px;
+                font-family: 'Lato', sans-serif;
+            }
+            p{
+                font-size: 13px;
+            }
+            a{
+                display: inline-block;
+                background-color: #fff;
+                border-radius: 20px;
+                text-decoration: none;
+                color: var(--main-purple);
+                padding: 7px 10px;
+                font-size: 13px;
+                font-weight: 600;
+                margin-top: 10px;
+                transition: 0.3s;
+                &:hover{
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .thecodefather{
+            background: linear-gradient(130deg, rgba(119,0,166,1) 0%, rgba(39,0,65,1) 100%);
+        }
+        .caster{
+            background: linear-gradient(130deg, rgba(255,188,0,1) 0%, rgba(201,94,0,1) 100%);
+            a{
+                color: orange;
+            }
+        }
+    }
+}

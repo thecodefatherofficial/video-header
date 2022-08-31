@@ -1,0 +1,96 @@
+.light-mode{
+    .form{
+        input, textarea, label, button{
+            background-color: #eee;
+        }
+        h3{
+            color: #000;
+        }
+    }
+}
+
+.dark-mode{
+    .form{
+        input, textarea, label, button{
+            background-color: #101010;
+        }
+        button{
+            color: #fff;
+        }
+        h3{
+            color: #fff;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    @media screen and (max-width: 520px){
+        margin: 100px 10px 0;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        img{
+            width: 400px;
+            @media screen and (max-width: 950px){
+                display: none;
+            }
+        }
+    }
+    form{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        h3{
+            line-height: 70px;
+        }
+        input, textarea{
+            border-radius: 10px;
+            border: none;
+            padding: 7px 10px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 15px;
+            &:focus{
+                outline: none;
+                background-color: rgb(243, 243, 243);
+            }
+        }
+        textarea{
+            height: 220px;
+            resize: none;
+        }
+        label{
+            background-color: #fff;
+            color: var(--main-purple);
+            display: inline-block;
+            padding: 1px 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        button{
+            padding: 7px 15px;
+            border: none;
+            background-color: #fff;
+            border-radius: 10px;
+            transition: 0.3s;
+            margin: 0 0 0 auto;
+            display: block;
+            cursor: pointer;
+            &:hover{
+                color: var(--main-purple);
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
