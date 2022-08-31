@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logos/s-logopl.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Scientech</title>
+</head>
+<body class="dark-mode">
+    
+    <nav id="mob-menu"></nav>
+
+    <article class="products-no">
+        <div class="products-no__content">
+            <p>Դուք չեք կարող այցելել այստեղ քանի դեռ չունեք հաշիվ մեր կայքում</p>
+            <div class="products-no__content__btn">
+                <a href="login.php">Մուտք</a>
+                <span></span>
+                <a href="registration.php">Գրանցում</a>
+            </div>
+            <p class="close--products-no">Փակել</p>
+        </div>
+    </article>
+
+    <main class="body">
+
+        <article class="mode__pop-up">
+            <div><i class="fa-solid fa-xmark"></i></div>
+
+            <input type="radio" name="theam" id="d" checked>
+            <label for="d"><i class="fa-solid fa-circle-half-stroke"></i> Սովորական</label>
+
+            <input type="radio" name="theam" id="s">
+            <label for="s"><i class="fa-solid fa-sun"></i> Արևային</label>
+
+            <input type="radio" name="theam" id="m">
+            <label for="m"><i class="fa-solid fa-moon"></i> Գիշերային</label>
+        </article>
+
+        <menu class="menu">
+            <div class="container">
+                <ul id="first-menu">
+                    <li><a href="index.html">Գլխավոր</a></li>
+                    <li><a href="#blog">Բլոգ</a></li>
+                    <li><a href="#products">Պրոդուկներ</a></li>
+                    <li><a href="#">Կապ</a></li>
+                </ul>
+                <ul id="second-menu">
+                    <li><a href="login.html">Մուտք</a></li>
+                    <li><a href="registration.html">Գրանցում</a></li>
+                    <li id="theame-open"><i class="fa-solid fa-palette"></i></li>
+                </ul>
+            </div>
+        </menu>
+
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__part-one">
+                    <video autoplay muted loop>
+                        <source src="./video/header-video.mp4" type="video/mp4">
+                    </video>
+                    <div class="header__part-one__logo">
+                        <img src="./img/more/video.png" alt="">                
+                    </div>
+                </div>
+                <div class="header__part-two">
+                    <h1>Բարի <br> <span>Գալուստ</span></h1>
+                    <p>Scientech</p>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="line"></div>
+                <h2>Բլոգ</h2>
+
+                <div class="blog_main">
+                    <div class="blog__posts">
+                        <div class="blog__posts__item">
+                            <span></span>
+                            <img src="./blogs/img/php-vs-java.png" alt="">
+                            <div class="blog__posts__item__text">
+                                <h3>PHP թ՞ե Java</h3>
+                                <p>Նրանց տարբերությունները և այլն</p>
+                                <a href="./blogs/php-vs-java">Դիտել</a>
+                            </div>
+                        </div>
+
+                        <div class="blog__posts__item">
+                            <img src="./blogs/img/cybersicrity.png" alt="">
+                            <div class="blog__posts__item__text">
+                                <h3>Կիբերանվտանգություն</h3>
+                                <p>Նրա մասին և այլ տեղեկություններ</p>
+                                <a href="./blogs/cyber-security.html">Դիտել</a>
+                            </div>
+                        </div>
+
+                        <div class="blog__posts__item">
+                            <img src="./blogs/img/mining.png" alt="">
+                            <div class="blog__posts__item__text">
+                                <h3>Մայնինգ</h3>
+                                <p>Նրա մասին և այլ տեղեկություններ</p>
+                                <a href="./blogs/mining.html">Դիտել</a>
+                            </div>
+                        </div>
+
+                        <div class="blog__posts__item">
+                            <img src="./blogs/img/web3.png" alt="">
+                            <div class="blog__posts__item__text">
+                                <h3>Վեբ3</h3>
+                                <p>Նրա մասին և այլ տեղեկություններ</p>
+                                <a href="./blogs/web3.html">Դիտել</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container">
+                <div class="line"></div>
+                <h2>Պրոդուկներ</h2>
+
+                <div class="products__main">
+                    <div class="thecodefather products--item">
+                        <img src="./img/logos/tcf-new-logo-dark.png" alt="">
+                        <div class="text">
+                            <h3>TheCodeFather</h3>
+                            <p>Սովորիր ծրագրավորում մեր օգնությամբ և այն զարգացրու մեր խաղերի օգնությամբ</p>
+                            <a id="index-prod" style="cursor: pointer;">Ավելին</a>
+                        </div>
+                    </div>
+
+                    <div class="caster products--item">
+                        <img src="./img/logos/casterwhitelogo.png" alt="">
+                        <div class="text">
+                            <h3>Caster</h3>
+                            <p>Օգտագործիր հայկական CSS / JS գրադարանը</p>
+                            <a id="index-prod" style="cursor: pointer;">Ավելին</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form" id="contact">
+            <div class="container">
+                <img src="./img/vector/undraw_forms_re_pkrt.svg" alt="">
+                <form method="post" action="sent_message.php">
+                    <h3>Կապի Հաստատում</h3>
+                    <label for="name">Անուն</label>
+                    <input type="text" name="user_name" id="name" required>
+                    <label for="email">Էլ․ Հասցե</label>
+                    <input type="email" name="user_email" id="email" required>
+                    <label for="text">Տեքստ</label>
+                    <textarea for="text" name="message_text" id="text" required></textarea>
+                    <button for="submit">Ուղարկել</button>
+                </form>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <img src="./img/logos/s-logopl.png" alt="">
+
+                <div class="footer__lists">
+                    <ul>
+                        <li><a href="index.html">Գլխավոր</a></li>
+                        <li><a href="#blog">Բլոգ</a></li>
+                        <li><a href="#products">Պրոդուկներ</a></li>
+                        <li><a href="#contact">Կապ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Մուտք</a></li>
+                        <li><a href="#">Գրանցում</a></li>
+                        <li><a style="cursor: pointer;" id="index-prod">TheCodeFather</a></li>
+                        <li><a style="cursor: pointer;" id="index-prod">Caster</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <span>Scientech - 2022</span>
+        </footer>
+    </main>
+
+    <script src="./js/script.js"></script>
+
+    
+    <script type="text/javascript">
+        document.umnicoWidgetHash = '394d493e826540c1814af4f98dfecc5d';
+        var x = document.createElement('script');
+        x.src = 'https://umnico.com/assets/widget-loader.js';
+        x.type = 'text/javascript';
+        x.charset = 'UTF-8';
+        x.async = true;
+        document.body.appendChild(x);
+    </script>
+    
+</body>
+</html>
